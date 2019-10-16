@@ -1,0 +1,11 @@
+<div style="padding: 1%">
+    <p class="mat-display-2">Загрузка документа</p>
+    <div style="padding-left: 10%; padding-right: 10%">
+        <mat-grid-list cols="4" rowHeight="3:1">
+            <mat-grid-tile [colspan]="4"><button style="width: 100%; height:100%" color="primary" type="button" mat-raised-button (click)="fileInput.click()">Choose
+                    File</button>
+                <input style="visibility: hidden" (change)="uploadDocument($event)" #fileInput type="file" id="file">
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

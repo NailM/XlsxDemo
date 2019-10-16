@@ -1,0 +1,12 @@
+<div style="padding: 1%">
+    <p class="mat-display-2">Список документов</p>
+    <div>
+        <mat-selection-list #shoes>
+            <mat-list-option style="margin-bottom: 1%" *ngFor="let document of documents; let i = index">
+                <span>Документ {{i+1}} </span>
+                <span>Автор: {{getStringData(document.meta.props.Author)}}</span>
+                <span>Дата создания: {{getStringData(document.meta.props.CreatedDate)}}</span>
+            </mat-list-option>
+        </mat-selection-list>
+    </div>
+</div>

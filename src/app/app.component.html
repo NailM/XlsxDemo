@@ -1,0 +1,14 @@
+<div>
+    <mat-toolbar style="padding: 0 5% 0 5%" color="primary">
+        <span>BashNeft Excel Loader</span>
+        <span style="flex: 1 1 auto;"></span>
+        <span>
+            <button mat-flat-button style="margin-right: 5%" [routerLink]="['/']">Главная</button>
+            <button mat-flat-button style="margin-right: 5%" [routerLink]="['/fileupload']">Загрузка файла</button>
+            <button mat-flat-button [routerLink]="['/filelist']">Список файлов</button>
+        </span>
+    </mat-toolbar>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
